@@ -8,7 +8,7 @@ Feature: Register as a new user
 
   @android
   Scenario: Successful Registration
-    Given a user with "valid" email
+    Given user is on the registration page
     When user enters "valid" details in registration form
     Then system creates an account for the user
 

@@ -3,8 +3,10 @@ module SharedObjects
 end
 World(SharedObjects)
 
-Given(/^a user with "([^"]*)" email$/) do |arg|
-  pending
+Given(/^user is on the registration page$/) do
+  byebug
+  login_page = $ENV::LoginScreen.new
+  login_page.click_register
 end
 
 When(/^user enters "([^"]*)" details in registration form$/) do |arg|

@@ -1,0 +1,7 @@
+user:
+  email:
+    valid: harissaleemkhi@gmail.com
+    invalid: haris@@test
+  name:
+    valid: Haris Saleem
+    invalid: 123%#

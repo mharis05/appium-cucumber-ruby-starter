@@ -1,0 +1,2 @@
+default: --no-source --color --format pretty -t not @MANUAL
+android: --no-source --color --format pretty -t "@android and not @MANUAL" PLATFORM_NAME=android

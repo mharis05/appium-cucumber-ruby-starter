@@ -13,12 +13,13 @@ def load_platform_modules
 end
 
 def load_caps_from_file(platform_name)
-  YAML.load_file("./config/caps/#{platform_name}/caps.yml")[ENV['DEVICE']]
+  YAML.load_file("./config/caps/#{platform_name}/caps.yml")
 end
 
 def init_driver(caps)
-  Appium::Driver.new(caps, false)
-  Appium.promote_appium_methods World
+  byebug
+  Appium::Driver.new(caps, true)
+  Appium.promote_appium_methods Object
 end
 
 # Load platform modules i.e. iOS or Android (one at a time)

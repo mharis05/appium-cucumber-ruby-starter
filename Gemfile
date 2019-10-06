@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'appium_lib', "10.3.1"
+gem 'appium_lib'
 gem 'cucumber'
 gem 'pry'
 gem 'rspec'

@@ -6,6 +6,7 @@ require 'httparty'
 require 'byebug'
 require 'time'
 require 'google/apis'
+require 'helpers'
 
 include RSpec::Matchers
 
@@ -14,3 +15,8 @@ ENVIRONMENT = YAML.load_file('./config/environment.yml')
 DATA = (YAML.load_file('./features/fixtures/data.yml'))[ENV['ENV']]
 
 $driver = init_driver(CAPS).start_driver
+
+# Load and require files
+def load_files(path)
+  Dir[path].each {|file| require file}
+end

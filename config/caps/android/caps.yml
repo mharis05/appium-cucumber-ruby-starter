@@ -1,0 +1,11 @@
+caps:
+  deviceName: "Device"
+  platformName: "Android"
+  appPackage: "com.loginmodule.learning"
+  app: "config/apps/android/sample.apk"
+  autoGrantPermissions: true
+  newCommandTimeout: 16000
+  udid: "emulator-5554"
+  disableWindowAnimation: true
+appium_lib:
+  port: 4723

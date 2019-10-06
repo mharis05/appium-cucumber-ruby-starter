@@ -17,7 +17,6 @@ def load_caps_from_file(platform_name)
 end
 
 def init_driver(caps)
-  byebug
   Appium::Driver.new(caps, true)
   Appium.promote_appium_methods Object
 end

@@ -6,6 +6,7 @@ Feature: Register as a new user
   A potential user attempts to register as a new user using
   the app.
 
+  @android
   Scenario: Successful Registration
     Given a user with "valid" email
     When user enters "valid" details in registration form
